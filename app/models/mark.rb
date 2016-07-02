@@ -3,4 +3,8 @@ class Mark < ActiveRecord::Base
 
   belongs_to :user
   belongs_to :book
+
+  scope :favorite, -> (user){
+    where(user_id: user.id, favorite: true)
+  }
 end

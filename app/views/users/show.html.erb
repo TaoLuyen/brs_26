@@ -21,5 +21,10 @@
         <% end %>
       </div>
     </div>
+    <div class="col-md-8">
+      <% unless current_user == @user %>
+        <%= render "favorite" %>
+      <% end %>
+    </div>
   </div>
 </div>
