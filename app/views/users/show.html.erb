@@ -25,6 +25,11 @@
       <% unless current_user == @user %>
         <%= render "favorite" %>
       <% end %>
+
+    <div class="nav-content">
+      <%= render "reading_history" %>
+    </div>
+
     </div>
   </div>
 </div>

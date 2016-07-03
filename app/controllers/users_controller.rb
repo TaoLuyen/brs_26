@@ -12,6 +12,8 @@ class UsersController < ApplicationController
     @user = current_user if @user.nil?
     @favorite_books = Book.where(id: Mark.favorite(@user).pluck(:book_id))
       .page(params[:page]).per Settings.favorites.page
+    @reading_books = Book.where(id: Mark.reading(@user).pluck(:book_id))
+      .page(params[:page]).per Settings.favorites.page
   end
 
   def update

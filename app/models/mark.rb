@@ -7,4 +7,8 @@ class Mark < ActiveRecord::Base
   scope :favorite, -> (user){
     where(user_id: user.id, favorite: true)
   }
+
+  scope :reading, -> (user){
+    where(user_id: user.id, status: 0)
+  }
 end
