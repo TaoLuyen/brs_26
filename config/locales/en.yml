@@ -40,7 +40,6 @@ en:
       sign_up_now: "Sign up now!"
       introduce: "This is the home page"
       linkto_framgia: "Framgia Vietnam"
-      my_actions: "My actions"
     help: "This is the help page"
     header:
       my_actions: "My actions"
@@ -57,6 +56,7 @@ en:
       list_users: "List users"
       user: "All Users"
       my_requests: "My requests"
+      my_actions: "My actions"
   users:
     submit: "Submit"
     list_favorite_books: "List favorite books"
@@ -95,7 +95,7 @@ en:
       create_at: "Create at"
       add_request: "Add new a request"
     new:
-      sent: "Sent"
+      sent: "Send"
       title: "New your request"
       content: "Input content your request"
     show:
